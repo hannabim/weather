@@ -124,3 +124,19 @@ a:link {
   border-radius: 30px;
   box-shadow: 5px 5px 10px rgba(101, 67, 181, 0.5);
 }
+.github {
+  color: #774181;
+  background-color: rgba(246, 229, 229, 0.6);
+  padding: 10px;
+  border-radius: 30px;
+  display: block;
+  margin: 20px 400px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+}
+.github:hover {
+  color: #6543b5;
+  cursor: pointer;
+}
