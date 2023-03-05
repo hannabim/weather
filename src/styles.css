@@ -1,0 +1,126 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/886/original/cloud.jpg?1675590542");
+  background-size: cover;
+}
+.container {
+  display: block;
+  margin: 0 auto;
+}
+
+.sector-1,
+.sector-2,
+.sector-3 {
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(237, 177, 241, 0.7);
+  border: 1px solid rgb(213, 155, 246);
+  border-radius: 10px;
+  width: 900px;
+}
+.city,
+.search,
+.current {
+  background-color: #f6e5e5;
+  color: #6543b5be;
+  border: 1px solid #6543b5ab;
+  border-radius: 10px;
+  padding: 5px 15px;
+  box-shadow: 5px 5px 10px rgba(101, 67, 181, 0.5);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  font-family: "Cookie", cursive;
+  font-size: 24px;
+}
+.search:hover,
+.current:hover {
+  background-color: #6543b5be;
+  color: #f6e5e5;
+}
+.sector-2 {
+  padding: 40px 30px;
+}
+
+.snow {
+  color: #6543b5;
+  font-size: 144px;
+  padding: 15px 30px;
+  display: block;
+  margin: 0 auto;
+}
+.temperature,
+.date,
+.weather,
+.location {
+  color: #774181;
+  background-color: #f6e5e5;
+  padding: 5px 15px;
+  border-radius: 30px;
+  margin: 5px;
+}
+a:link {
+  text-decoration: none;
+}
+
+#celsius,
+#fahrenheit {
+  color: #774181;
+}
+
+.temperature {
+  font-weight: bold;
+  font-size: 48px;
+  font-family: "Cookie", cursive;
+}
+.location {
+  font-size: 48px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+}
+.date {
+  font-size: 20px;
+  opacity: 0.7;
+  font-family: "Cookie", cursive;
+  font-size: 20px;
+}
+.weather {
+  font-size: 20px;
+  opacity: 0.7;
+  font-weight: bold;
+  font-family: "Cookie", cursive;
+}
+.prec-wind {
+  opacity: 0.7;
+  color: #774181;
+  font-family: "Cookie", cursive;
+  font-size: 30px;
+  background-color: #f6e5e5;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+.days {
+  text-align: center;
+}
+.icon {
+  font-size: 48px;
+  color: #6543b5;
+  text-align: center;
+}
+.temperature-days {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #774181;
+  font-family: "Cookie", cursive;
+}
+.days {
+  color: #774181;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+}
+.weekday:hover {
+  background-color: rgba(246, 229, 229, 0.5);
+  padding: 5px 15px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(101, 67, 181, 0.5);
+}
