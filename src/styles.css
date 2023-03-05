@@ -131,7 +131,7 @@ a:link {
   padding: 10px;
   border-radius: 30px;
   display: block;
-  margin: 20px 300px;
+  margin: 20px auto;
   font-size: 18px;
   font-weight: bold;
   font-family: "Dancing Script", cursive;
