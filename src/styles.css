@@ -129,12 +129,7 @@ a:link {
   box-shadow: 5px 5px 10px rgba(101, 67, 181, 0.5);
 }
 .github {
-  margin: 20px auto;
-   padding: 20px;
   color: #774181;
-  background-color: rgba(237, 177, 241, 0.7);
-  border: 1px solid rgb(213, 155, 246);
-  border-radius: 10px;
   width: 900px;
   display:block;
   font-size: 18px;
