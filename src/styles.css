@@ -61,7 +61,10 @@ body {
 a:link {
   text-decoration: none;
 }
-
+#celsius.active,
+#fahrenheit.active {
+  color: #6543b5;
+}
 #celsius,
 #fahrenheit {
   color: #774181;
