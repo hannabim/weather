@@ -49,6 +49,7 @@ function displayCurrentCity(responce) {
 }
 function changeCityTemperature(responce) {
   let cityTemperature = document.querySelector("#temperature");
+  celsiusTemperature = responce.data.main.temp;
   let temperature = Math.round(responce.data.main.temp);
   cityTemperature.innerHTML = temperature;
 }
@@ -168,3 +169,20 @@ let current = document.querySelector("#current");
 current.addEventListener("submit", currentLocation);
 DefaultCity("Kyiv");
 
+//Convert to Farenheit
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperature.innerHTML = Math.round(fahrenheitTemperature);
+}
+function convertToCelsius(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#temperature");
+  temperature.innerHTML = Math.round(celsiusTemperature);
+}
+let celsiusTemperature = null;
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", convertToFahrenheit);
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", convertToCelsius);
