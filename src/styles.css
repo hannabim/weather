@@ -10,7 +10,7 @@ body {
 .sector-1,
 .sector-2,
 .sector-3 {
-  margin: 30px auto;
+  margin: 30px;
   padding: 20px;
   background-color: rgba(237, 177, 241, 0.7);
   border: 1px solid rgb(213, 155, 246);
@@ -125,7 +125,7 @@ a:link {
   box-shadow: 5px 5px 10px rgba(101, 67, 181, 0.5);
 }
 .github {
-  margin: 30px auto;
+  margin: 30px;
    padding: 20px;
   color: #774181;
   background-color: rgba(237, 177, 241, 0.7);
