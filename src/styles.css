@@ -125,13 +125,13 @@ a:link {
   box-shadow: 5px 5px 10px rgba(101, 67, 181, 0.5);
 }
 .github {
-  width: 1000px;
-  color: #774181;
-  background-color: rgba(246, 229, 229, 0.6);
-  padding: 10px;
-  border-radius: 30px;
-  display: block;
-  margin: 20px auto;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(237, 177, 241, 0.7);
+  border: 1px solid rgb(213, 155, 246);
+  border-radius: 10px;
+  width: 900px;
+  display:block;
   font-size: 18px;
   font-weight: bold;
   font-family: "Dancing Script", cursive;
