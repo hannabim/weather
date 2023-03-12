@@ -131,7 +131,14 @@ a:link {
 .github {
   color: #774181;
   width: 900px;
-  display:block;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+.creator{
+  color: #774181;
+  width: 900px;
   font-size: 18px;
   font-weight: bold;
   font-family: "Dancing Script", cursive;
