@@ -55,9 +55,10 @@ function changeCityTemperature(responce) {
 
 function changeWeatherCondition(responce) {
   let weather = document.querySelector("#description");
+  let weatherIcon = responce.data.weather[0].icon;
   let weatherCondition = responce.data.weather[0].main;
   weather.innerHTML = weatherCondition;
-  changeIcon(weatherCondition);
+  changeIcon(weatherIcon);
 }
 function changeHumidity(responce) {
   let humidity = document.querySelector("#humidity");
@@ -69,22 +70,47 @@ function changeWind(responce) {
   let windValue = Math.round(responce.data.wind.speed);
   wind.innerHTML = windValue;
 }
-function changeIcon(weatherCondition) {
+function changeIcon(weatherIcon) {
   let icon = document.querySelector("#weather-icon");
-  let iconName = "fa-temperature-three-quarters";
-  if (weatherCondition === "Clouds") {
-    icon.classList.replace(iconName, "fa-cloud");
-  } else if (weatherCondition === "Thunderstorm") {
-    icon.classList.replace(iconName, "fa-tornado");
-  } else if (weatherCondition === "Clear") {
-    icon.classList.replace(iconName, "fa-sun");
-  } else if (weatherCondition === "Atmosphere") {
-    icon.classList.replace(iconName, "fa-smog");
-  } else if (weatherCondition === "Snow") {
-    icon.classList.replace(iconName, "fa-snow");
-  } else if (weatherCondition === "Rain" || "Drizzle") {
-    icon.classList.replace(iconName, "fa-cloud-rain");
+  let classif = document.getElementById("weather-icon");
+  classif.className = " ";
+  let icons = [];
+  icons[1] = "fa-sun";
+  icons[3] = "fa-cloud";
+  icons[(2, 4)] = "fa-cloud";
+  icons[(9, 10)] = "fa-cloud-rain";
+  icons[11] = "fa-tornado";
+  icons[13] = "fa-snow";
+  icons[50] = "fa-smog";
+  let number = 0;
+  if (weatherIcon === "01d" || weatherIcon === "01n") {
+    number = 1;
   }
+  if (weatherIcon === "02d" || weatherIcon === "02n") {
+    number = 2;
+  }
+  if (weatherIcon === "03d" || weatherIcon === "03n") {
+    number = 3;
+  }
+  if (weatherIcon === "04d" || weatherIcon === "04n") {
+    number = 4;
+  }
+  if (weatherIcon === "09d" || weatherIcon === "09n") {
+    number = 9;
+  }
+  if (weatherIcon === "10d" || weatherIcon === "10n") {
+    number = 10;
+  }
+  if (weatherIcon === "11d" || weatherIcon === "11n") {
+    number = 11;
+  }
+  if (weatherIcon === "13d" || weatherIcon === "13n") {
+    number = 13;
+  }
+  if (weatherIcon === "50d" || weatherIcon === "50n") {
+    number = 50;
+  }
+  icon.classList.add("fa-solid", "icon", icons[number]);
 }
 function cityTemperature(responce) {
   changeCityTemperature(responce);
