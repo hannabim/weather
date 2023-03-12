@@ -167,3 +167,21 @@ function DefaultCity(city) {
 let current = document.querySelector("#current");
 current.addEventListener("submit", currentLocation);
 DefaultCity("Kyiv");
+
+//Convert to Farenheit
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celsius * 9) / 5 + 32;
+  temperature.innerHTML = Math.round(fahrenheitTemperature);
+}
+function convertToCelsius(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#temperature");
+  temperature.innerHTML = Math.round(celsius);
+}
+let celsius = null;
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", convertToFahrenheit);
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", convertToCelsius);
