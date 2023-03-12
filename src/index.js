@@ -175,11 +175,15 @@ function convertToFahrenheit(event) {
   let temperature = document.querySelector("#temperature");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperature.innerHTML = Math.round(fahrenheitTemperature);
+  celsius.classList.add("active");
+  fahrenheit.classList.remove("active");
 }
 function convertToCelsius(event) {
   event.preventDefault();
   let temperature = document.querySelector("#temperature");
   temperature.innerHTML = Math.round(celsiusTemperature);
+  celsius.classList.remove("active");
+  fahrenheit.classList.add("active");
 }
 let celsiusTemperature = null;
 let fahrenheit = document.querySelector("#fahrenheit");
