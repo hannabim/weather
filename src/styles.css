@@ -128,7 +128,9 @@ a:link {
   border-radius: 30px;
   box-shadow: 5px 5px 10px rgba(101, 67, 181, 0.5);
 }
-
+.github{
+  color: #774181;
+}
 .creator{
   color: #774181;
   display:block;
