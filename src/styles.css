@@ -1,7 +1,7 @@
 body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/886/original/cloud.jpg?1675590542");
   background-size: cover;
-  background-repeat: no-repeat round;
+  background-repeat: no-repeat inherit;
 }
 .container {
   display: block;
