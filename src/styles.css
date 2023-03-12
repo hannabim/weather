@@ -126,7 +126,8 @@ a:link {
 }
 .github {
   margin: 50px auto;
-  padding: 20px;
+   padding: 40px 30px;
+  color: #774181;
   background-color: rgba(237, 177, 241, 0.7);
   border: 1px solid rgb(213, 155, 246);
   border-radius: 10px;
